@@ -151,4 +151,49 @@ public class Test {
 //        /* code goes here*/
 //        return keys;
 //    }
+    // OCA102
+//    static int count = 0;
+//    int i = 0;
+//
+//    public void changeCount() {
+//        while (i < 5) {
+//            i++;
+//            count++;
+//        }
+//    }
+//
+//    public static void main(String[] args) {
+//        Test check1 = new Test();
+//        Test check2 = new Test();
+//        check1.changeCount();
+//        check2.changeCount();
+//        System.out.print(check1.count + " : " + check2.count);
+//    }
+    // OCA104
+//    public static void main(String[] args) {
+//        int numbers[];
+//        numbers = new int[2];
+//        numbers[0] = 10;
+//        numbers[1] = 20;
+//
+//        numbers = new int[4];
+//        numbers[2] = 30;
+//        numbers[3] = 40;
+//        for (int x : numbers) {
+//            System.out.print(" " + x);
+//        }
+//    }
+    // OCA114
+    public static final int MIN = 1;
+    public static void main(String[] args) {
+        int x = args.length;
+        if (checkLimit(x)) { // line n1
+            System.out.println("Java SE");
+        } else {
+            System.out.println("Java EE");
+        }
+    }
+    public static boolean checkLimit(int x) {
+        return (x >= MIN) ? true : false;
+    }
 }
