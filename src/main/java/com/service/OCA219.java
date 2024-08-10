@@ -15,7 +15,7 @@ public class OCA219 {
             }
             else {
                 continue;
-                System.out.print(e);
+//                System.out.print(e);
             }
         }
     }
